@@ -1,0 +1,8 @@
+name: 'Issues'
+on: issues
+jobs:
+  show-details:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: 'Show Details'
+        run: '${{ toJSON(inputs) }}'
